@@ -22,8 +22,10 @@ final class HomePageViewModel: HomePageViewModelProtocol {
     }
     
     func fetchNews(completion: @escaping (([News]) -> Void)) {
-        newsManager.fetchNews { newsList in
+        newsManager.fetchNews { news in
+            let newsList = news
             completion(newsList)
+            
         }
     }
 }

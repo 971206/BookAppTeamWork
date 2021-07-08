@@ -25,13 +25,14 @@ class BestSellerItem: UICollectionViewCell {
     func configureImage() {
         shadowLayer.clipsToBounds = true
         shadowLayer.layer.cornerRadius = cornerRadius
+        shadowLayer.alpha = 0.2
         imagePoster.layer.cornerRadius = cornerRadius
     }
     
     func configure(with item: News) {
         let posterURL = URL(string: item.imageUrl ?? "")
         imagePoster.kf.setImage(with: posterURL)
-        self.labelTitle.text = item.title
-        self.labelSmallDescription.text = item.content
+        self.labelTitle.text = item.title ?? ""
+        self.labelSmallDescription.text = item.content ?? ""
     }
 }

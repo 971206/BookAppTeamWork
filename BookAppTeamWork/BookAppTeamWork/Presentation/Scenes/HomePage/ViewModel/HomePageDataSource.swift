@@ -18,26 +18,34 @@ class HomePageDataSource: NSObject, UITableViewDataSource, UITableViewDelegate {
         self.viewModel = viewModel
         self.tableView.dataSource = self
         self.tableView.delegate = self
+        
     }
     
     func refresh() {
         viewModel.fetchNews { [weak self] newsList in
             guard let self = self else {return}
             self.newsList = newsList
-            self.tableView.reloadData()
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+
+            }
         }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
-        if indexPath.row == 0 {
-            let cell = tableView.deque(BestSellerCell.self, for: indexPath)
-            cell.configureNews(news: newsList)
-        }
+//        let cell = UITableViewCell()
+//        if indexPath.row == 0 {
+//            let cell = tableView.deque(BestSellerCell.self, for: indexPath)
+//            cell.configureNews(news: newsList)
+//        }
+//        return cell
+        
+        let cell = tableView.deque(BestSellerCell.self, for: indexPath)
+        cell.fetchNewsList()
         return cell
     }
     

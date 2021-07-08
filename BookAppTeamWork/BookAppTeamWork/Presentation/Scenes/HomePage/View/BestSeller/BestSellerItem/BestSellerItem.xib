@@ -21,13 +21,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="122" height="275"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h1T-Xc-Bm8">
-                                <rect key="frame" x="0.0" y="200" width="122" height="10"/>
+                                <rect key="frame" x="0.0" y="195" width="122" height="10"/>
                                 <color key="backgroundColor" systemColor="systemGray4Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="10" id="W8p-vm-Z9c"/>
                                 </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XLN-34-lcN">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XLN-34-lcN">
                                 <rect key="frame" x="0.0" y="0.0" width="122" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="cyv-UL-aSz"/>
@@ -57,7 +57,7 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="h1T-Xc-Bm8" secondAttribute="trailing" id="3Nc-kc-efO"/>
                             <constraint firstItem="XLN-34-lcN" firstAttribute="top" secondItem="vyz-FK-4jd" secondAttribute="top" id="4dA-zZ-f5c"/>
-                            <constraint firstItem="h1T-Xc-Bm8" firstAttribute="top" secondItem="XLN-34-lcN" secondAttribute="bottom" id="FgT-Y6-bbE"/>
+                            <constraint firstItem="h1T-Xc-Bm8" firstAttribute="top" secondItem="XLN-34-lcN" secondAttribute="bottom" constant="-5" id="FgT-Y6-bbE"/>
                             <constraint firstItem="xTf-cJ-z8Q" firstAttribute="top" secondItem="AaW-2n-5vX" secondAttribute="bottom" constant="8" id="GLj-ii-UEq"/>
                             <constraint firstItem="Ygn-og-0W7" firstAttribute="leading" secondItem="vyz-FK-4jd" secondAttribute="leading" id="GTQ-OT-c2X"/>
                             <constraint firstItem="AaW-2n-5vX" firstAttribute="leading" secondItem="vyz-FK-4jd" secondAttribute="leading" id="JcL-pL-VMe"/>

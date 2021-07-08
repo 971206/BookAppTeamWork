@@ -290,10 +290,8 @@
 		FA2F18292697005E00CBD930 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FA2F18362697011E00CBD930 /* GenresCell */,
-				FA2F18352697011700CBD930 /* GenresItem */,
-				FA2F18342697010E00CBD930 /* BestSellerCell */,
-				FA2F1833269700F100CBD930 /* BestSellerItem */,
+				FA2F184B2697187800CBD930 /* BestSeller */,
+				FA2F184C2697188700CBD930 /* Genres */,
 				FA2F182B2697007500CBD930 /* HomePageViewController.swift */,
 				FA2F182D2697007B00CBD930 /* HomePageViewController.storyboard */,
 			);
@@ -343,6 +341,24 @@
 				FA2F18402697021700CBD930 /* GenresCell.xib */,
 			);
 			path = GenresCell;
+			sourceTree = "<group>";
+		};
+		FA2F184B2697187800CBD930 /* BestSeller */ = {
+			isa = PBXGroup;
+			children = (
+				FA2F18342697010E00CBD930 /* BestSellerCell */,
+				FA2F1833269700F100CBD930 /* BestSellerItem */,
+			);
+			path = BestSeller;
+			sourceTree = "<group>";
+		};
+		FA2F184C2697188700CBD930 /* Genres */ = {
+			isa = PBXGroup;
+			children = (
+				FA2F18362697011E00CBD930 /* GenresCell */,
+				FA2F18352697011700CBD930 /* GenresItem */,
+			);
+			path = Genres;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
