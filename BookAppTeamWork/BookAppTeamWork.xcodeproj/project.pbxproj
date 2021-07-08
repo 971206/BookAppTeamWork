@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A66859526970415003629C3 /* OnBoardingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A66859426970415003629C3 /* OnBoardingViewController.storyboard */; };
+		9A6685982697043B003629C3 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6685972697043B003629C3 /* OnBoardingViewController.swift */; };
+		9A6685A426970CC5003629C3 /* OnBoardingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6685A226970CC5003629C3 /* OnBoardingCell.swift */; };
+		9A6685A526970CC5003629C3 /* OnBoardingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A6685A326970CC5003629C3 /* OnBoardingCell.xib */; };
+		9A6685AD269711CF003629C3 /* OnBoardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6685A9269711CF003629C3 /* OnBoardingViewModel.swift */; };
+		9A6685AE269711CF003629C3 /* OnBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6685AA269711CF003629C3 /* OnBoarding.swift */; };
+		9A6685AF269711CF003629C3 /* OnBoardingDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6685AB269711CF003629C3 /* OnBoardingDataSource.swift */; };
+		9A6685B0269711CF003629C3 /* OnBoardingViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6685AC269711CF003629C3 /* OnBoardingViewModelProtocol.swift */; };
+		9A6685B726971313003629C3 /* OnBoardingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6685B626971313003629C3 /* OnBoardingManager.swift */; };
+		9A6685C9269726D5003629C3 /* LastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6685C7269726D5003629C3 /* LastCell.swift */; };
+		9A6685CA269726D5003629C3 /* LastCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A6685C8269726D5003629C3 /* LastCell.xib */; };
 		EE80EC94269727F200937DC0 /* SignUpViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE80EC93269727F200937DC0 /* SignUpViewController.storyboard */; };
 		EE80EC962697280100937DC0 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE80EC952697280100937DC0 /* SignUpViewController.swift */; };
 		EE80EC982697281300937DC0 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE80EC972697281300937DC0 /* SignInViewController.swift */; };
@@ -51,6 +62,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9A66859426970415003629C3 /* OnBoardingViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBoardingViewController.storyboard; sourceTree = "<group>"; };
+		9A6685972697043B003629C3 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
+		9A6685A226970CC5003629C3 /* OnBoardingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingCell.swift; sourceTree = "<group>"; };
+		9A6685A326970CC5003629C3 /* OnBoardingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnBoardingCell.xib; sourceTree = "<group>"; };
+		9A6685A9269711CF003629C3 /* OnBoardingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingViewModel.swift; sourceTree = "<group>"; };
+		9A6685AA269711CF003629C3 /* OnBoarding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoarding.swift; sourceTree = "<group>"; };
+		9A6685AB269711CF003629C3 /* OnBoardingDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingDataSource.swift; sourceTree = "<group>"; };
+		9A6685AC269711CF003629C3 /* OnBoardingViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingViewModelProtocol.swift; sourceTree = "<group>"; };
+		9A6685B626971313003629C3 /* OnBoardingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingManager.swift; sourceTree = "<group>"; };
+		9A6685C7269726D5003629C3 /* LastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LastCell.swift; path = BookAppTeamWork/APIManager/LastCell.swift; sourceTree = SOURCE_ROOT; };
+		9A6685C8269726D5003629C3 /* LastCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = LastCell.xib; path = BookAppTeamWork/APIManager/LastCell.xib; sourceTree = SOURCE_ROOT; };
 		EE80EC93269727F200937DC0 /* SignUpViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpViewController.storyboard; sourceTree = "<group>"; };
 		EE80EC952697280100937DC0 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		EE80EC972697281300937DC0 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +129,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A668593269703A3003629C3 /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				9A6685A8269711AE003629C3 /* ViewModel */,
+				9A66859A269705C3003629C3 /* View */,
+			);
+			path = OnBoarding;
+			sourceTree = "<group>";
+		};
+		9A66859A269705C3003629C3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9A66859426970415003629C3 /* OnBoardingViewController.storyboard */,
+				9A6685972697043B003629C3 /* OnBoardingViewController.swift */,
+				9A6685C6269726B6003629C3 /* lastCell */,
+				9A6685A126970C85003629C3 /* OnBoardingCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9A6685A126970C85003629C3 /* OnBoardingCell */ = {
+			isa = PBXGroup;
+			children = (
+				9A6685A226970CC5003629C3 /* OnBoardingCell.swift */,
+				9A6685A326970CC5003629C3 /* OnBoardingCell.xib */,
+			);
+			name = OnBoardingCell;
+			sourceTree = "<group>";
+		};
+		9A6685A8269711AE003629C3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9A6685AA269711CF003629C3 /* OnBoarding.swift */,
+				9A6685AB269711CF003629C3 /* OnBoardingDataSource.swift */,
+				9A6685A9269711CF003629C3 /* OnBoardingViewModel.swift */,
+				9A6685AC269711CF003629C3 /* OnBoardingViewModelProtocol.swift */,
+			);
+			name = ViewModel;
+			path = View;
+			sourceTree = "<group>";
+		};
+		9A6685C6269726B6003629C3 /* lastCell */ = {
+			isa = PBXGroup;
+			children = (
+				9A6685C7269726D5003629C3 /* LastCell.swift */,
+				9A6685C8269726D5003629C3 /* LastCell.xib */,
+			);
+			name = lastCell;
+			sourceTree = "<group>";
+		};
 		EE80EC90269727B500937DC0 /* SignUpSignIn */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +267,7 @@
 			children = (
 				FA2F18282697005800CBD930 /* HomePage */,
 				EE80EC90269727B500937DC0 /* SignUpSignIn */,
+				9A668593269703A3003629C3 /* OnBoarding */,
 				FA2F18202696F49600CBD930 /* Base */,
 				FA2F17F32696EFE300CBD930 /* Main */,
 			);
@@ -267,6 +340,7 @@
 			isa = PBXGroup;
 			children = (
 				FA2F18002696F17600CBD930 /* NewsManager.swift */,
+				9A6685B626971313003629C3 /* OnBoardingManager.swift */,
 			);
 			path = APIManager;
 			sourceTree = "<group>";
@@ -474,11 +548,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A66859526970415003629C3 /* OnBoardingViewController.storyboard in Resources */,
+				9A6685CA269726D5003629C3 /* LastCell.xib in Resources */,
 				FA2F17EB2696EF5B00CBD930 /* LaunchScreen.storyboard in Resources */,
 				FA2F18512697283F00CBD930 /* TopPicksCell.xib in Resources */,
 				FA2F183E2697016600CBD930 /* GenresItem.xib in Resources */,
 				FA2F182E2697007B00CBD930 /* HomePageViewController.storyboard in Resources */,
 				FA2F184A2697035500CBD930 /* BestSellerItem.xib in Resources */,
+				9A6685A526970CC5003629C3 /* OnBoardingCell.xib in Resources */,
 				FA2F17E82696EF5B00CBD930 /* Assets.xcassets in Resources */,
 				FA2F18262696F71900CBD930 /* FontsFree-Net-SFProDisplay-Regular.ttf in Resources */,
 				FA2F18462697023000CBD930 /* BestSellerCell.xib in Resources */,
@@ -497,23 +574,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A6685B726971313003629C3 /* OnBoardingManager.swift in Sources */,
 				FA2F181D2696F40800CBD930 /* CoordinatorProtocol.swift in Sources */,
 				FA2F180C2696F27300CBD930 /* UICollectionView + Extension.swift in Sources */,
 				FA2F182C2697007500CBD930 /* HomePageViewController.swift in Sources */,
 				FA2F18452697023000CBD930 /* BestSellerCell.swift in Sources */,
 				FA2F18502697283F00CBD930 /* TopPicksCell.swift in Sources */,
+				9A6685B0269711CF003629C3 /* OnBoardingViewModelProtocol.swift in Sources */,
 				FA2F18082696F24A00CBD930 /* UICollectionViewCell + Extension.swift in Sources */,
 				FA2F1832269700EA00CBD930 /* HomePageViewModel.swift in Sources */,
 				FA2F17E02696EF5800CBD930 /* MainViewController.swift in Sources */,
 				FA2F181F2696F40800CBD930 /* AppCoordinator.swift in Sources */,
 				FA2F18062696F22B00CBD930 /* UITableView + Extension.swift in Sources */,
 				EE80EC962697280100937DC0 /* SignUpViewController.swift in Sources */,
+				9A6685AE269711CF003629C3 /* OnBoarding.swift in Sources */,
 				FA2F180F2696F2A500CBD930 /* NetworkManager.swift in Sources */,
 				FA2F18222696F4A400CBD930 /* BaseViewController.swift in Sources */,
 				EE80EC982697281300937DC0 /* SignInViewController.swift in Sources */,
 				FA2F181C2696F40800CBD930 /* Storyboarded.swift in Sources */,
 				FA2F18042696F1FC00CBD930 /* UITableViewCell + Extension.swift in Sources */,
+				9A6685AD269711CF003629C3 /* OnBoardingViewModel.swift in Sources */,
+				9A6685A426970CC5003629C3 /* OnBoardingCell.swift in Sources */,
 				FA2F181E2696F40800CBD930 /* CoordinatorDelegate.swift in Sources */,
+				9A6685AF269711CF003629C3 /* OnBoardingDataSource.swift in Sources */,
 				FA2F18132696F2DC00CBD930 /* NewsList.swift in Sources */,
 				FA2F18122696F2DC00CBD930 /* News.swift in Sources */,
 				FA2F18412697021700CBD930 /* GenresCell.swift in Sources */,
@@ -521,6 +604,8 @@
 				FA2F17DC2696EF5800CBD930 /* AppDelegate.swift in Sources */,
 				FA2F18492697035500CBD930 /* BestSellerItem.swift in Sources */,
 				FA2F17E62696EF5800CBD930 /* BookAppTeamWork.xcdatamodeld in Sources */,
+				9A6685982697043B003629C3 /* OnBoardingViewController.swift in Sources */,
+				9A6685C9269726D5003629C3 /* LastCell.swift in Sources */,
 				FA2F18012696F17600CBD930 /* NewsManager.swift in Sources */,
 				FA2F183D2697016600CBD930 /* GenresItem.swift in Sources */,
 				FA2F17DE2696EF5800CBD930 /* SceneDelegate.swift in Sources */,
@@ -672,6 +757,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "BookAppTeamWork/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -690,6 +776,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "BookAppTeamWork/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
