@@ -7,7 +7,8 @@
 
 import UIKit
 
-class LastCell: UICollectionViewCell {
+
+class LastCell: UICollectionViewCell{
 
 
     @IBOutlet weak var signUpBtn: UIButton!
@@ -25,11 +26,16 @@ class LastCell: UICollectionViewCell {
     }
 
     @IBAction func signIn(_ sender: Any) {
-      print("Shesvla")
+
+        print("Sing in")
     }
-    
     @IBAction func signUp(_ sender: Any) {
-        print("registracia")
+        print("Sing Up")
 
     }
 }
+
+
+
+
+    

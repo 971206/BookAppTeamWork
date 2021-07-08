@@ -56,18 +56,5 @@ class OnBoardingViewController: BaseViewController {
         self.collectionView.scrollRectToVisible(frame, animated: true)
     }
     
-//    @IBAction func next(_ sender: Any) {
-//
-//        if i < InfoDataSource.itemsCount - 1 {
-//            i += 1
-//            let collectionBounds = self.collectionView.bounds
-//            let contentOffset = CGFloat(floor(self.collectionView.contentOffset.x + collectionBounds.size.width))
-//            self.moveCollectionToFrame(contentOffset: contentOffset)
-//
-//        } else {
-//            coordinator?.proceedToSecondVCwithNext()
-//        }
-//
-//    }
 }
 
