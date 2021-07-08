@@ -24,7 +24,7 @@ final class AppCoordinator: CoordinatorProtocol {
     }
     
     func start() {
-        let vc = MainViewController.instantiateFromStoryboard()
+        let vc = OnBoardingViewController.instantiateFromStoryboard()
         vc.coordinator = self
         navigationController?.pushViewController(vc, animated: true)
         

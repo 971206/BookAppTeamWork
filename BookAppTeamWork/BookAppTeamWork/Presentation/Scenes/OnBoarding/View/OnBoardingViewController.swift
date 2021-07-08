@@ -7,7 +7,7 @@
 
 import UIKit
 
-class OnBoardingViewController: UIViewController {
+class OnBoardingViewController: BaseViewController {
 
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var collectionView: UICollectionView!

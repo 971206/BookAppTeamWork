@@ -13,7 +13,7 @@ protocol OnBoardingManagerProtocol: AnyObject {
 
 class OnBoardingManager: OnBoardingManagerProtocol {
     func fetchInfo(completion: @escaping ((Result<[OnBoarding], Error>) -> Void)) {
-        let url = "https://run.mocky.io/v3/3c597760-1ebc-4136-a10f-d285c3343efb"
+        let url = "https://run.mocky.io/v3/1f9603c9-34c9-49e8-86ac-a47bf6683dbb"
         NetworkManager.shared.get(url: url) { (result: Result<[OnBoarding], Error>) in
             switch result {
             case .success(let response):
