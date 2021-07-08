@@ -22,6 +22,7 @@
 		9A6685F2269754A8003629C3 /* DetailImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6685F0269754A8003629C3 /* DetailImageCell.swift */; };
 		9A6685F3269754A8003629C3 /* DetailImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A6685F1269754A8003629C3 /* DetailImageCell.xib */; };
 		9A6685FA269758FB003629C3 /* DetailDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6685F9269758FB003629C3 /* DetailDataSource.swift */; };
+		9AA477952697A836001EEE07 /* DetailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AA477942697A836001EEE07 /* DetailsViewController.storyboard */; };
 		EE80EC94269727F200937DC0 /* SignUpViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE80EC93269727F200937DC0 /* SignUpViewController.storyboard */; };
 		EE80EC962697280100937DC0 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE80EC952697280100937DC0 /* SignUpViewController.swift */; };
 		EE80EC982697281300937DC0 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE80EC972697281300937DC0 /* SignInViewController.swift */; };
@@ -81,6 +82,7 @@
 		9A6685F0269754A8003629C3 /* DetailImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailImageCell.swift; path = BookAppTeamWork/APIManager/DetailImageCell.swift; sourceTree = SOURCE_ROOT; };
 		9A6685F1269754A8003629C3 /* DetailImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = DetailImageCell.xib; path = BookAppTeamWork/APIManager/DetailImageCell.xib; sourceTree = SOURCE_ROOT; };
 		9A6685F9269758FB003629C3 /* DetailDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailDataSource.swift; path = BookAppTeamWork/APIManager/DetailDataSource.swift; sourceTree = SOURCE_ROOT; };
+		9AA477942697A836001EEE07 /* DetailsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DetailsViewController.storyboard; sourceTree = "<group>"; };
 		EE80EC93269727F200937DC0 /* SignUpViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpViewController.storyboard; sourceTree = "<group>"; };
 		EE80EC952697280100937DC0 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		EE80EC972697281300937DC0 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 		9A6685DB26973F28003629C3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9AA477942697A836001EEE07 /* DetailsViewController.storyboard */,
 				9A6685E126973FAB003629C3 /* DetailsViewController.swift */,
 				9A6685F9269758FB003629C3 /* DetailDataSource.swift */,
 				9A6685ED2697544E003629C3 /* DetailImageCell */,
@@ -584,6 +587,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AA477952697A836001EEE07 /* DetailsViewController.storyboard in Resources */,
 				9A66859526970415003629C3 /* OnBoardingViewController.storyboard in Resources */,
 				9A6685CA269726D5003629C3 /* LastCell.xib in Resources */,
 				9A6685F3269754A8003629C3 /* DetailImageCell.xib in Resources */,
