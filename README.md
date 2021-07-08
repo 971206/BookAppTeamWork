@@ -13,5 +13,5 @@ Tasks:
 2. 
 3. 
 4. SignIn/SignUp pages ალექსი კობაიძე - https://github.com/971206/BookAppTeamWork/tree/dev/SignUptTest-PR
-5. https://github.com/971206/BookAppTeamWork/tree/dev/Slide-Menu-Page-PR. -- სლაიდ ინ მენიუ
+5. https://github.com/971206/BookAppTeamWork/tree/dev/Slide-Menu-Page-PR. -- სლაიდ ინ მენიუ შოთა ქლიბაძე
 
