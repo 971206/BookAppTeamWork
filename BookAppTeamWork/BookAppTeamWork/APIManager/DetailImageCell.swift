@@ -18,7 +18,7 @@ class DetailImageCell: UICollectionViewCell {
     }
 
     func configure(with item: News) {
-        DetailImage.kf.setImage(with: URL(string: item.imageUrl ?? ""))
+        detailImage.kf.setImage(with: URL(string: item.imageUrl ?? ""))
        
     }
 }

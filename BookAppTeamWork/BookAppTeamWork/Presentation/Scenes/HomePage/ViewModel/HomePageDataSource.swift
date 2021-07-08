@@ -27,7 +27,6 @@ class HomePageDataSource: NSObject, UITableViewDataSource, UITableViewDelegate {
             self.newsList = newsList
             DispatchQueue.main.async {
                 self.tableView.reloadData()
-
             }
         }
     }

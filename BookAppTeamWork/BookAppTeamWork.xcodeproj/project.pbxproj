@@ -18,6 +18,10 @@
 		9A6685B726971313003629C3 /* OnBoardingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6685B626971313003629C3 /* OnBoardingManager.swift */; };
 		9A6685C9269726D5003629C3 /* LastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6685C7269726D5003629C3 /* LastCell.swift */; };
 		9A6685CA269726D5003629C3 /* LastCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A6685C8269726D5003629C3 /* LastCell.xib */; };
+		9A6685E326973FAB003629C3 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6685E126973FAB003629C3 /* DetailsViewController.swift */; };
+		9A6685F2269754A8003629C3 /* DetailImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6685F0269754A8003629C3 /* DetailImageCell.swift */; };
+		9A6685F3269754A8003629C3 /* DetailImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A6685F1269754A8003629C3 /* DetailImageCell.xib */; };
+		9A6685FA269758FB003629C3 /* DetailDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6685F9269758FB003629C3 /* DetailDataSource.swift */; };
 		EE80EC94269727F200937DC0 /* SignUpViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE80EC93269727F200937DC0 /* SignUpViewController.storyboard */; };
 		EE80EC962697280100937DC0 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE80EC952697280100937DC0 /* SignUpViewController.swift */; };
 		EE80EC982697281300937DC0 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE80EC972697281300937DC0 /* SignInViewController.swift */; };
@@ -73,6 +77,10 @@
 		9A6685B626971313003629C3 /* OnBoardingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingManager.swift; sourceTree = "<group>"; };
 		9A6685C7269726D5003629C3 /* LastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LastCell.swift; path = BookAppTeamWork/APIManager/LastCell.swift; sourceTree = SOURCE_ROOT; };
 		9A6685C8269726D5003629C3 /* LastCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = LastCell.xib; path = BookAppTeamWork/APIManager/LastCell.xib; sourceTree = SOURCE_ROOT; };
+		9A6685E126973FAB003629C3 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		9A6685F0269754A8003629C3 /* DetailImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailImageCell.swift; path = BookAppTeamWork/APIManager/DetailImageCell.swift; sourceTree = SOURCE_ROOT; };
+		9A6685F1269754A8003629C3 /* DetailImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = DetailImageCell.xib; path = BookAppTeamWork/APIManager/DetailImageCell.xib; sourceTree = SOURCE_ROOT; };
+		9A6685F9269758FB003629C3 /* DetailDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailDataSource.swift; path = BookAppTeamWork/APIManager/DetailDataSource.swift; sourceTree = SOURCE_ROOT; };
 		EE80EC93269727F200937DC0 /* SignUpViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpViewController.storyboard; sourceTree = "<group>"; };
 		EE80EC952697280100937DC0 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		EE80EC972697281300937DC0 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -179,6 +187,33 @@
 			name = lastCell;
 			sourceTree = "<group>";
 		};
+		9A6685D326973C16003629C3 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				9A6685DB26973F28003629C3 /* View */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		9A6685DB26973F28003629C3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9A6685E126973FAB003629C3 /* DetailsViewController.swift */,
+				9A6685F9269758FB003629C3 /* DetailDataSource.swift */,
+				9A6685ED2697544E003629C3 /* DetailImageCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9A6685ED2697544E003629C3 /* DetailImageCell */ = {
+			isa = PBXGroup;
+			children = (
+				9A6685F0269754A8003629C3 /* DetailImageCell.swift */,
+				9A6685F1269754A8003629C3 /* DetailImageCell.xib */,
+			);
+			path = DetailImageCell;
+			sourceTree = "<group>";
+		};
 		EE80EC90269727B500937DC0 /* SignUpSignIn */ = {
 			isa = PBXGroup;
 			children = (
@@ -268,6 +303,7 @@
 				FA2F18282697005800CBD930 /* HomePage */,
 				EE80EC90269727B500937DC0 /* SignUpSignIn */,
 				9A668593269703A3003629C3 /* OnBoarding */,
+				9A6685D326973C16003629C3 /* Details */,
 				FA2F18202696F49600CBD930 /* Base */,
 				FA2F17F32696EFE300CBD930 /* Main */,
 			);
@@ -550,6 +586,7 @@
 			files = (
 				9A66859526970415003629C3 /* OnBoardingViewController.storyboard in Resources */,
 				9A6685CA269726D5003629C3 /* LastCell.xib in Resources */,
+				9A6685F3269754A8003629C3 /* DetailImageCell.xib in Resources */,
 				FA2F17EB2696EF5B00CBD930 /* LaunchScreen.storyboard in Resources */,
 				FA2F18512697283F00CBD930 /* TopPicksCell.xib in Resources */,
 				FA2F183E2697016600CBD930 /* GenresItem.xib in Resources */,
@@ -583,6 +620,7 @@
 				9A6685B0269711CF003629C3 /* OnBoardingViewModelProtocol.swift in Sources */,
 				FA2F18082696F24A00CBD930 /* UICollectionViewCell + Extension.swift in Sources */,
 				FA2F1832269700EA00CBD930 /* HomePageViewModel.swift in Sources */,
+				9A6685FA269758FB003629C3 /* DetailDataSource.swift in Sources */,
 				FA2F17E02696EF5800CBD930 /* MainViewController.swift in Sources */,
 				FA2F181F2696F40800CBD930 /* AppCoordinator.swift in Sources */,
 				FA2F18062696F22B00CBD930 /* UITableView + Extension.swift in Sources */,
@@ -601,6 +639,7 @@
 				FA2F18122696F2DC00CBD930 /* News.swift in Sources */,
 				FA2F18412697021700CBD930 /* GenresCell.swift in Sources */,
 				FA2F1830269700DF00CBD930 /* HomePageDataSource.swift in Sources */,
+				9A6685E326973FAB003629C3 /* DetailsViewController.swift in Sources */,
 				FA2F17DC2696EF5800CBD930 /* AppDelegate.swift in Sources */,
 				FA2F18492697035500CBD930 /* BestSellerItem.swift in Sources */,
 				FA2F17E62696EF5800CBD930 /* BookAppTeamWork.xcdatamodeld in Sources */,
@@ -609,6 +648,7 @@
 				FA2F18012696F17600CBD930 /* NewsManager.swift in Sources */,
 				FA2F183D2697016600CBD930 /* GenresItem.swift in Sources */,
 				FA2F17DE2696EF5800CBD930 /* SceneDelegate.swift in Sources */,
+				9A6685F2269754A8003629C3 /* DetailImageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -757,7 +797,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "BookAppTeamWork/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -776,7 +816,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "BookAppTeamWork/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

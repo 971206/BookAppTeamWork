@@ -11,7 +11,7 @@ class DetailDataSource: NSObject, UICollectionViewDataSource, UICollectionViewDe
     
     private var collectionView: UICollectionView!
     private var viewModel: HomePageViewModelProtocol!
-    private var homeViewModel = [HomePageViewModel]()
+    private var homeViewModel = [News]()
 
     init(with collectionView: UICollectionView, viewModel: HomePageViewModelProtocol) {
         super.init()
@@ -25,19 +25,19 @@ class DetailDataSource: NSObject, UICollectionViewDataSource, UICollectionViewDe
     }
     
     func refresh() {
-        viewModel.fetchInfo{ viewModels in
-            self.infoViewModel.append(contentsOf: viewModels)
+        viewModel.fetchNews{ viewModels in
+            self.homeViewModel.append(contentsOf: viewModels)
             
             DispatchQueue.main.async {
                 self.collectionView.reloadData()
-                InfoDataSource.itemsCount = self.infoViewModel.count
+//                OnBoardingDataSource.itemsCount = self.homeViewModel.count
             }
         }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.deque(InfoCell.self, for: indexPath)
+        let cell = collectionView.deque(DetailImageCell.self, for: indexPath)
         
         cell.configure(with: homeViewModel[indexPath.row])
         
