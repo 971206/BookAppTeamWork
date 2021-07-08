@@ -50,6 +50,10 @@ class ListDataSource: NSObject, UITableViewDataSource {
         return 200
     }
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
+    
     
     
 }

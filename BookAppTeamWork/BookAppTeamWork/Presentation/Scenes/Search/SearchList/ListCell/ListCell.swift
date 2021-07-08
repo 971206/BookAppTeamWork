@@ -1,5 +1,5 @@
 //
-//  GridCell.swift
+//  ListCell.swift
 //  BookAppTeamWork
 //
 //  Created by macuser on 08.07.21.
@@ -11,14 +11,14 @@ import  Kingfisher
 
 class ListCell: UITableViewCell {
 
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var newsImg: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-
+    @IBOutlet weak var img: UIImageView!
+    
+    @IBOutlet weak var title: UILabel!
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
@@ -27,7 +27,7 @@ class ListCell: UITableViewCell {
     
     func configure(with item: News) {
         let url = URL(string: item.imageUrl ?? "")
-        newsImg.kf.setImage(with: url)
-        titleLabel.text = item.title
+        img.kf.setImage(with: url)
+        title.text = item.title
     }
 }

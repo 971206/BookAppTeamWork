@@ -24,7 +24,7 @@ final class AppCoordinator: CoordinatorProtocol {
     }
     
     func start() {
-        let vc = SearchListViewController.instantiateFromStoryboard()
+        let vc = SearchViewController.instantiateFromStoryboard()
         vc.coordinator = self
         navigationController?.pushViewController(vc, animated: true)
         

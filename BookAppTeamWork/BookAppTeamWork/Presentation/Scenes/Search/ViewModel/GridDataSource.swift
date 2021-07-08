@@ -40,20 +40,39 @@ class GridDataSource: NSObject, UICollectionViewDataSource {
 
     }
     
+    
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-      //  let cell = tableView.deque(GridCell.self, for: indexPath)
-       // cell.configure(with: newsList[indexPath.row])
+        let cell = collectionView.deque(GridCell.self, for: indexPath)
+        cell.configureGrid(with: newsList[indexPath.row])
         return UICollectionViewCell()
     }
     
     
     
 }
-    
-extension GridDataSource: UICollectionViewDelegate {
+
+extension GridDataSource: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: collectionView.frame.width / 2, height: collectionView.frame.height)
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 10
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 10
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
+    }
+
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print(#function)
     }
 }
+
 
 

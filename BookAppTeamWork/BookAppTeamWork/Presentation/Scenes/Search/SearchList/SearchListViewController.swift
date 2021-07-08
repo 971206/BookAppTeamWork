@@ -8,16 +8,14 @@
 
 import UIKit
 
-class SearchListViewController: UIViewController {
+class SearchListViewController: BaseViewController {
 
     @IBOutlet weak var tableView: UITableView!
     private var dataSource: ListDataSource!
     private var newsManager: NewsManagerProtocol!
-    //private var coordinator: CoordinatorProtocol!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         setupLayout()
         configureNews()
     }
@@ -33,4 +31,11 @@ class SearchListViewController: UIViewController {
         
     }
 
+    
+    @IBAction func onGrid(_ sender: Any) {
+//        guard let sb = storyboard?.instantiateViewController(withIdentifier: "SearchViewController") else { return }
+//        navigationController?.pushViewController(sb, animated: true)
+//
+    }
+    
 }

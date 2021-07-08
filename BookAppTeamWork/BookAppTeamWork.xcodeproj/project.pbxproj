@@ -15,6 +15,8 @@
 		63320D472697039200B83283 /* GridDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63320D462697039200B83283 /* GridDataSource.swift */; };
 		63320D4926970B1B00B83283 /* ListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63320D4826970B1B00B83283 /* ListDataSource.swift */; };
 		63320D5226970EBE00B83283 /* SearchListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63320D5126970EBE00B83283 /* SearchListViewController.storyboard */; };
+		63784C9A269725F000F50805 /* GridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63784C98269725F000F50805 /* GridCell.swift */; };
+		63784C9B269725F000F50805 /* GridCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63784C99269725F000F50805 /* GridCell.xib */; };
 		FA2F17DC2696EF5800CBD930 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2F17DB2696EF5800CBD930 /* AppDelegate.swift */; };
 		FA2F17DE2696EF5800CBD930 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2F17DD2696EF5800CBD930 /* SceneDelegate.swift */; };
 		FA2F17E02696EF5800CBD930 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2F17DF2696EF5800CBD930 /* MainViewController.swift */; };
@@ -49,6 +51,8 @@
 		63320D462697039200B83283 /* GridDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridDataSource.swift; sourceTree = "<group>"; };
 		63320D4826970B1B00B83283 /* ListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDataSource.swift; sourceTree = "<group>"; };
 		63320D5126970EBE00B83283 /* SearchListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchListViewController.storyboard; sourceTree = "<group>"; };
+		63784C98269725F000F50805 /* GridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCell.swift; sourceTree = "<group>"; };
+		63784C99269725F000F50805 /* GridCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GridCell.xib; sourceTree = "<group>"; };
 		FA2F17D82696EF5800CBD930 /* BookAppTeamWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookAppTeamWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA2F17DB2696EF5800CBD930 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA2F17DD2696EF5800CBD930 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +95,8 @@
 			isa = PBXGroup;
 			children = (
 				63320D3A2696FFC200B83283 /* SearchGrid */,
+				63320D372696FFC200B83283 /* SearchViewController.swift */,
+				63320D382696FFC200B83283 /* SearchViewController.storyboard */,
 				63320D442697005D00B83283 /* SearchList */,
 				63320D362696FFC200B83283 /* ViewModel */,
 			);
@@ -118,8 +124,8 @@
 			isa = PBXGroup;
 			children = (
 				63320D4A26970C1F00B83283 /* ListCell */,
-				63320D5126970EBE00B83283 /* SearchListViewController.storyboard */,
 				63320D3E2696FFC200B83283 /* SearchListViewController.swift */,
+				63320D5126970EBE00B83283 /* SearchListViewController.storyboard */,
 			);
 			path = SearchList;
 			sourceTree = "<group>";
@@ -127,8 +133,8 @@
 		63320D452697008200B83283 /* GridCell */ = {
 			isa = PBXGroup;
 			children = (
-				63320D372696FFC200B83283 /* SearchViewController.swift */,
-				63320D382696FFC200B83283 /* SearchViewController.storyboard */,
+				63784C98269725F000F50805 /* GridCell.swift */,
+				63784C99269725F000F50805 /* GridCell.xib */,
 			);
 			path = GridCell;
 			sourceTree = "<group>";
@@ -136,8 +142,8 @@
 		63320D4A26970C1F00B83283 /* ListCell */ = {
 			isa = PBXGroup;
 			children = (
-				63320D3C2696FFC200B83283 /* ListCell.xib */,
 				63320D3D2696FFC200B83283 /* ListCell.swift */,
+				63320D3C2696FFC200B83283 /* ListCell.xib */,
 			);
 			path = ListCell;
 			sourceTree = "<group>";
@@ -392,6 +398,7 @@
 				FA2F17E82696EF5B00CBD930 /* Assets.xcassets in Resources */,
 				FA2F18262696F71900CBD930 /* FontsFree-Net-SFProDisplay-Regular.ttf in Resources */,
 				63320D5226970EBE00B83283 /* SearchListViewController.storyboard in Resources */,
+				63784C9B269725F000F50805 /* GridCell.xib in Resources */,
 				FA2F18272696F71900CBD930 /* FontsFree-Net-SFProDisplay-Bold.ttf in Resources */,
 				FA2F17E32696EF5800CBD930 /* MainViewController.storyboard in Resources */,
 				63320D412696FFC200B83283 /* ListCell.xib in Resources */,
@@ -417,6 +424,7 @@
 				FA2F18062696F22B00CBD930 /* UITableView + Extension.swift in Sources */,
 				FA2F180F2696F2A500CBD930 /* NetworkManager.swift in Sources */,
 				FA2F18222696F4A400CBD930 /* BaseViewController.swift in Sources */,
+				63784C9A269725F000F50805 /* GridCell.swift in Sources */,
 				FA2F181C2696F40800CBD930 /* Storyboarded.swift in Sources */,
 				FA2F18042696F1FC00CBD930 /* UITableViewCell + Extension.swift in Sources */,
 				FA2F181E2696F40800CBD930 /* CoordinatorDelegate.swift in Sources */,
