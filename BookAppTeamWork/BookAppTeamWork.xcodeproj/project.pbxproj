@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A6685DE26973F63003629C3 /* ElipseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6685DD26973F63003629C3 /* ElipseView.swift */; };
+		9A6685E326973FAB003629C3 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6685E126973FAB003629C3 /* DetailsViewController.swift */; };
+		9A6685E426973FAB003629C3 /* DetailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A6685E226973FAB003629C3 /* DetailsViewController.storyboard */; };
 		FA2F17DC2696EF5800CBD930 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2F17DB2696EF5800CBD930 /* AppDelegate.swift */; };
 		FA2F17DE2696EF5800CBD930 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2F17DD2696EF5800CBD930 /* SceneDelegate.swift */; };
 		FA2F17E02696EF5800CBD930 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2F17DF2696EF5800CBD930 /* MainViewController.swift */; };
@@ -33,6 +36,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9A6685DD26973F63003629C3 /* ElipseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ElipseView.swift; path = BookAppTeamWork/APIManager/ElipseView.swift; sourceTree = SOURCE_ROOT; };
+		9A6685E126973FAB003629C3 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		9A6685E226973FAB003629C3 /* DetailsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DetailsViewController.storyboard; sourceTree = "<group>"; };
 		FA2F17D82696EF5800CBD930 /* BookAppTeamWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookAppTeamWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA2F17DB2696EF5800CBD930 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA2F17DD2696EF5800CBD930 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +77,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A6685D326973C16003629C3 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				9A6685DC26973F4A003629C3 /* Customs */,
+				9A6685DB26973F28003629C3 /* View */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		9A6685DB26973F28003629C3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9A6685E226973FAB003629C3 /* DetailsViewController.storyboard */,
+				9A6685E126973FAB003629C3 /* DetailsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9A6685DC26973F4A003629C3 /* Customs */ = {
+			isa = PBXGroup;
+			children = (
+				9A6685DD26973F63003629C3 /* ElipseView.swift */,
+			);
+			path = Customs;
+			sourceTree = "<group>";
+		};
 		FA2F17CF2696EF5800CBD930 = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +162,7 @@
 		FA2F17F52696EFF300CBD930 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				9A6685D326973C16003629C3 /* Details */,
 				FA2F18202696F49600CBD930 /* Base */,
 				FA2F17F32696EFE300CBD930 /* Main */,
 			);
@@ -316,6 +349,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A6685E426973FAB003629C3 /* DetailsViewController.storyboard in Resources */,
 				FA2F17EB2696EF5B00CBD930 /* LaunchScreen.storyboard in Resources */,
 				FA2F17E82696EF5B00CBD930 /* Assets.xcassets in Resources */,
 				FA2F18262696F71900CBD930 /* FontsFree-Net-SFProDisplay-Regular.ttf in Resources */,
@@ -344,10 +378,12 @@
 				FA2F181E2696F40800CBD930 /* CoordinatorDelegate.swift in Sources */,
 				FA2F18132696F2DC00CBD930 /* NewsList.swift in Sources */,
 				FA2F18122696F2DC00CBD930 /* News.swift in Sources */,
+				9A6685E326973FAB003629C3 /* DetailsViewController.swift in Sources */,
 				FA2F17DC2696EF5800CBD930 /* AppDelegate.swift in Sources */,
 				FA2F17E62696EF5800CBD930 /* BookAppTeamWork.xcdatamodeld in Sources */,
 				FA2F18012696F17600CBD930 /* NewsManager.swift in Sources */,
 				FA2F17DE2696EF5800CBD930 /* SceneDelegate.swift in Sources */,
+				9A6685DE26973F63003629C3 /* ElipseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +532,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "BookAppTeamWork/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -514,6 +551,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "BookAppTeamWork/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
