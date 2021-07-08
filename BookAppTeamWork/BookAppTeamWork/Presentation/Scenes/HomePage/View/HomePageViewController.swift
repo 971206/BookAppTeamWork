@@ -31,6 +31,7 @@ class HomePageViewController: BaseViewController {
     private func configireTableView() {
         tableView.separatorStyle = .none
         tableView.registerNib(class: BestSellerCell.self)
+        tableView.registerNib(class: GenresCell.self)
     }
     
 }

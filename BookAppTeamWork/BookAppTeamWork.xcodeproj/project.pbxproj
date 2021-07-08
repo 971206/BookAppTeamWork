@@ -42,6 +42,8 @@
 		FA2F18462697023000CBD930 /* BestSellerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA2F18442697023000CBD930 /* BestSellerCell.xib */; };
 		FA2F18492697035500CBD930 /* BestSellerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2F18472697035500CBD930 /* BestSellerItem.swift */; };
 		FA2F184A2697035500CBD930 /* BestSellerItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA2F18482697035500CBD930 /* BestSellerItem.xib */; };
+		FA2F18502697283F00CBD930 /* TopPicksCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2F184E2697283F00CBD930 /* TopPicksCell.swift */; };
+		FA2F18512697283F00CBD930 /* TopPicksCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA2F184F2697283F00CBD930 /* TopPicksCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +83,8 @@
 		FA2F18442697023000CBD930 /* BestSellerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BestSellerCell.xib; sourceTree = "<group>"; };
 		FA2F18472697035500CBD930 /* BestSellerItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestSellerItem.swift; sourceTree = "<group>"; };
 		FA2F18482697035500CBD930 /* BestSellerItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BestSellerItem.xib; sourceTree = "<group>"; };
+		FA2F184E2697283F00CBD930 /* TopPicksCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopPicksCell.swift; sourceTree = "<group>"; };
+		FA2F184F2697283F00CBD930 /* TopPicksCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopPicksCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -290,6 +294,7 @@
 		FA2F18292697005E00CBD930 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FA2F184D2697265A00CBD930 /* Top */,
 				FA2F184B2697187800CBD930 /* BestSeller */,
 				FA2F184C2697188700CBD930 /* Genres */,
 				FA2F182B2697007500CBD930 /* HomePageViewController.swift */,
@@ -361,6 +366,15 @@
 			path = Genres;
 			sourceTree = "<group>";
 		};
+		FA2F184D2697265A00CBD930 /* Top */ = {
+			isa = PBXGroup;
+			children = (
+				FA2F184E2697283F00CBD930 /* TopPicksCell.swift */,
+				FA2F184F2697283F00CBD930 /* TopPicksCell.xib */,
+			);
+			path = Top;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -425,6 +439,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA2F17EB2696EF5B00CBD930 /* LaunchScreen.storyboard in Resources */,
+				FA2F18512697283F00CBD930 /* TopPicksCell.xib in Resources */,
 				FA2F183E2697016600CBD930 /* GenresItem.xib in Resources */,
 				FA2F182E2697007B00CBD930 /* HomePageViewController.storyboard in Resources */,
 				FA2F184A2697035500CBD930 /* BestSellerItem.xib in Resources */,
@@ -448,6 +463,7 @@
 				FA2F180C2696F27300CBD930 /* UICollectionView + Extension.swift in Sources */,
 				FA2F182C2697007500CBD930 /* HomePageViewController.swift in Sources */,
 				FA2F18452697023000CBD930 /* BestSellerCell.swift in Sources */,
+				FA2F18502697283F00CBD930 /* TopPicksCell.swift in Sources */,
 				FA2F18082696F24A00CBD930 /* UICollectionViewCell + Extension.swift in Sources */,
 				FA2F1832269700EA00CBD930 /* HomePageViewModel.swift in Sources */,
 				FA2F17E02696EF5800CBD930 /* MainViewController.swift in Sources */,

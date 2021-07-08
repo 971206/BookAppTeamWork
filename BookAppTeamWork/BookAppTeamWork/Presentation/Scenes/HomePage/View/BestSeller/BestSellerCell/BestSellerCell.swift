@@ -19,7 +19,7 @@ class BestSellerCell: UITableViewCell {
         
     }
     
-    func setUpCollectionView() {
+   private func setUpCollectionView() {
        collectionView.dataSource = self
        collectionView.delegate = self
        collectionView.registerNib(class: BestSellerItem.self)
