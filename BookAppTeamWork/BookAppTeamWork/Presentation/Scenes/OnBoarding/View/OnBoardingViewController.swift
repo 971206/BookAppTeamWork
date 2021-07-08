@@ -22,10 +22,15 @@ class OnBoardingViewController: BaseViewController {
         
         
         collectionView.registerNib(class: OnBoardingCell.self)
+
         configureViewModel()
         self.navigationController?.navigationBar.isHidden = true
         
         
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        collectionView.registerNib(class: LastCell.self)
+
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {

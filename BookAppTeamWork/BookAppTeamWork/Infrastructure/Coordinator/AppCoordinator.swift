@@ -31,5 +31,5 @@ final class AppCoordinator: CoordinatorProtocol {
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
     }
-    
+   
 }

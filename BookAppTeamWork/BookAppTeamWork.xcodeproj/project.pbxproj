@@ -16,6 +16,8 @@
 		9A6685AF269711CF003629C3 /* OnBoardingDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6685AB269711CF003629C3 /* OnBoardingDataSource.swift */; };
 		9A6685B0269711CF003629C3 /* OnBoardingViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6685AC269711CF003629C3 /* OnBoardingViewModelProtocol.swift */; };
 		9A6685B726971313003629C3 /* OnBoardingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6685B626971313003629C3 /* OnBoardingManager.swift */; };
+		9A6685C9269726D5003629C3 /* LastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6685C7269726D5003629C3 /* LastCell.swift */; };
+		9A6685CA269726D5003629C3 /* LastCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A6685C8269726D5003629C3 /* LastCell.xib */; };
 		FA2F17DC2696EF5800CBD930 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2F17DB2696EF5800CBD930 /* AppDelegate.swift */; };
 		FA2F17DE2696EF5800CBD930 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2F17DD2696EF5800CBD930 /* SceneDelegate.swift */; };
 		FA2F17E02696EF5800CBD930 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2F17DF2696EF5800CBD930 /* MainViewController.swift */; };
@@ -51,6 +53,8 @@
 		9A6685AB269711CF003629C3 /* OnBoardingDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingDataSource.swift; sourceTree = "<group>"; };
 		9A6685AC269711CF003629C3 /* OnBoardingViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingViewModelProtocol.swift; sourceTree = "<group>"; };
 		9A6685B626971313003629C3 /* OnBoardingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingManager.swift; sourceTree = "<group>"; };
+		9A6685C7269726D5003629C3 /* LastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LastCell.swift; path = BookAppTeamWork/APIManager/LastCell.swift; sourceTree = SOURCE_ROOT; };
+		9A6685C8269726D5003629C3 /* LastCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = LastCell.xib; path = BookAppTeamWork/APIManager/LastCell.xib; sourceTree = SOURCE_ROOT; };
 		FA2F17D82696EF5800CBD930 /* BookAppTeamWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookAppTeamWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA2F17DB2696EF5800CBD930 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA2F17DD2696EF5800CBD930 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +107,7 @@
 			children = (
 				9A66859426970415003629C3 /* OnBoardingViewController.storyboard */,
 				9A6685972697043B003629C3 /* OnBoardingViewController.swift */,
+				9A6685C6269726B6003629C3 /* lastCell */,
 				9A6685A126970C85003629C3 /* OnBoardingCell */,
 			);
 			path = View;
@@ -127,6 +132,15 @@
 			);
 			name = ViewModel;
 			path = View;
+			sourceTree = "<group>";
+		};
+		9A6685C6269726B6003629C3 /* lastCell */ = {
+			isa = PBXGroup;
+			children = (
+				9A6685C7269726D5003629C3 /* LastCell.swift */,
+				9A6685C8269726D5003629C3 /* LastCell.xib */,
+			);
+			name = lastCell;
 			sourceTree = "<group>";
 		};
 		FA2F17CF2696EF5800CBD930 = {
@@ -377,6 +391,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A66859526970415003629C3 /* OnBoardingViewController.storyboard in Resources */,
+				9A6685CA269726D5003629C3 /* LastCell.xib in Resources */,
 				FA2F17EB2696EF5B00CBD930 /* LaunchScreen.storyboard in Resources */,
 				9A6685A526970CC5003629C3 /* OnBoardingCell.xib in Resources */,
 				FA2F17E82696EF5B00CBD930 /* Assets.xcassets in Resources */,
@@ -415,6 +430,7 @@
 				FA2F17DC2696EF5800CBD930 /* AppDelegate.swift in Sources */,
 				FA2F17E62696EF5800CBD930 /* BookAppTeamWork.xcdatamodeld in Sources */,
 				9A6685982697043B003629C3 /* OnBoardingViewController.swift in Sources */,
+				9A6685C9269726D5003629C3 /* LastCell.swift in Sources */,
 				FA2F18012696F17600CBD930 /* NewsManager.swift in Sources */,
 				FA2F17DE2696EF5800CBD930 /* SceneDelegate.swift in Sources */,
 			);
