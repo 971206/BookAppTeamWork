@@ -91,8 +91,8 @@
 			isa = PBXGroup;
 			children = (
 				63320D3A2696FFC200B83283 /* SearchGrid */,
-				63320D362696FFC200B83283 /* ViewModel */,
 				63320D442697005D00B83283 /* SearchList */,
+				63320D362696FFC200B83283 /* ViewModel */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -109,7 +109,7 @@
 		63320D3A2696FFC200B83283 /* SearchGrid */ = {
 			isa = PBXGroup;
 			children = (
-				63320D452697008200B83283 /* View */,
+				63320D452697008200B83283 /* GridCell */,
 			);
 			path = SearchGrid;
 			sourceTree = "<group>";
@@ -117,29 +117,29 @@
 		63320D442697005D00B83283 /* SearchList */ = {
 			isa = PBXGroup;
 			children = (
-				63320D4A26970C1F00B83283 /* List */,
+				63320D4A26970C1F00B83283 /* ListCell */,
 				63320D5126970EBE00B83283 /* SearchListViewController.storyboard */,
 				63320D3E2696FFC200B83283 /* SearchListViewController.swift */,
 			);
 			path = SearchList;
 			sourceTree = "<group>";
 		};
-		63320D452697008200B83283 /* View */ = {
+		63320D452697008200B83283 /* GridCell */ = {
 			isa = PBXGroup;
 			children = (
 				63320D372696FFC200B83283 /* SearchViewController.swift */,
 				63320D382696FFC200B83283 /* SearchViewController.storyboard */,
 			);
-			path = View;
+			path = GridCell;
 			sourceTree = "<group>";
 		};
-		63320D4A26970C1F00B83283 /* List */ = {
+		63320D4A26970C1F00B83283 /* ListCell */ = {
 			isa = PBXGroup;
 			children = (
 				63320D3C2696FFC200B83283 /* ListCell.xib */,
 				63320D3D2696FFC200B83283 /* ListCell.swift */,
 			);
-			path = List;
+			path = ListCell;
 			sourceTree = "<group>";
 		};
 		FA2F17CF2696EF5800CBD930 = {
