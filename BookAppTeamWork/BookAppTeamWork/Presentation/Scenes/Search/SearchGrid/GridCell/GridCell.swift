@@ -9,12 +9,13 @@ import UIKit
 
 class GridCell: UICollectionViewCell {
 
+    @IBOutlet weak var cellView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var newsImg: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        cellView.layer.cornerRadius = 17
     }
 
     func configureGrid(with item: News) {

@@ -95,8 +95,6 @@
 			isa = PBXGroup;
 			children = (
 				63320D3A2696FFC200B83283 /* SearchGrid */,
-				63320D372696FFC200B83283 /* SearchViewController.swift */,
-				63320D382696FFC200B83283 /* SearchViewController.storyboard */,
 				63320D442697005D00B83283 /* SearchList */,
 				63320D362696FFC200B83283 /* ViewModel */,
 			);
@@ -116,6 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				63320D452697008200B83283 /* GridCell */,
+				63320D372696FFC200B83283 /* SearchViewController.swift */,
+				63320D382696FFC200B83283 /* SearchViewController.storyboard */,
 			);
 			path = SearchGrid;
 			sourceTree = "<group>";

@@ -30,6 +30,15 @@ class SearchViewController: BaseViewController {
         
     }
     
+    @IBAction func onList(_ sender: Any) {
+        
+        let sb = UIStoryboard(name: "SearchListViewController", bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: "SearchListViewController") as! SearchListViewController
+        navigationController?.pushViewController(vc, animated: true)
+
+    }
+   
+    
 
 
 }

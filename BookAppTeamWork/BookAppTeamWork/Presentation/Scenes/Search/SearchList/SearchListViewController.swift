@@ -31,11 +31,9 @@ class SearchListViewController: BaseViewController {
         
     }
 
-    
     @IBAction func onGrid(_ sender: Any) {
-//        guard let sb = storyboard?.instantiateViewController(withIdentifier: "SearchViewController") else { return }
-//        navigationController?.pushViewController(sb, animated: true)
-//
+        navigationController?.popViewController(animated: true)
     }
+    
     
 }
