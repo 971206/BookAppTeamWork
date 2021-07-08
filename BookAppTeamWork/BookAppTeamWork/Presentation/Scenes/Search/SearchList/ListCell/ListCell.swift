@@ -27,6 +27,7 @@ class ListCell: UITableViewCell {
         super.awakeFromNib()
         greenB.layer.cornerRadius = 15
         whiteB.layer.cornerRadius = 15
+        img.layer.cornerRadius = 10
 
         
     }
