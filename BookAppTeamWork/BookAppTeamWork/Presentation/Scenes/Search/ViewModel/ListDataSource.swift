@@ -1,5 +1,5 @@
 //
-//  SearchDataSource.swift
+//  ListDataSource.swift
 //  BookAppTeamWork
 //
 //  Created by Mac User on 7/8/21.
@@ -7,16 +7,16 @@
 
 import UIKit
 
-class SearchDataSource: NSObject, UITableViewDataSource {
+class ListDataSource: NSObject, UITableViewDataSource {
     
     private var tableView: UITableView!
 
     private var newsManager: NewsManagerProtocol!
-    private var coordinator: CoordinatorProtocol!
+   // private var coordinator: CoordinatorProtocol!
 
     private var newsList = [News]()
     
-    init(with tableView: UITableView, manager: NewsManagerProtocol, coordinator: CoordinatorProtocol) {
+    init(with tableView: UITableView, manager: NewsManagerProtocol) {
         super.init()
         
         self.tableView = tableView
@@ -41,16 +41,20 @@ class SearchDataSource: NSObject, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.deque(GridCell.self, for: indexPath)
+        let cell = tableView.deque(ListCell.self, for: indexPath)
         cell.configure(with: newsList[indexPath.row])
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 200
     }
     
     
     
 }
     
-extension SearchDataSource: UITableViewDelegate {
+extension ListDataSource: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("tap to open map")
     }

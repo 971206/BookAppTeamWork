@@ -9,7 +9,7 @@
 import UIKit
 import  Kingfisher
 
-class GridCell: UITableViewCell {
+class ListCell: UITableViewCell {
 
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var newsImg: UIImageView!

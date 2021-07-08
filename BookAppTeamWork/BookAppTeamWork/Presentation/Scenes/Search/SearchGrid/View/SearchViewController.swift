@@ -9,8 +9,8 @@ import UIKit
 
 class SearchViewController: BaseViewController {
 
-    @IBOutlet weak var tableView: UITableView!
-    private var dataSource: SearchDataSource!
+    @IBOutlet weak var collectionVIew: UICollectionView!
+    private var dataSource: GridDataSource!
     private var newsManager: NewsManagerProtocol!
     //private var coordinator: CoordinatorProtocol!
 
@@ -22,12 +22,12 @@ class SearchViewController: BaseViewController {
     }
     
     private func setupLayout() {
-        tableView.registerNib(class: GridCell.self)
+        //collectionVIew.registerNib(class: GridCell.self)
     }
     
     private func configureNews() {
         newsManager = NewsManager()
-        dataSource = SearchDataSource(with: tableView, manager: newsManager, coordinator: coordinator as! CoordinatorProtocol)
+        dataSource = GridDataSource(with: collectionVIew, manager: newsManager)
         
         
     }
