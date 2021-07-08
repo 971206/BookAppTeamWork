@@ -33,15 +33,17 @@ class OnBoardingDataSource: NSObject, UICollectionViewDataSource, UICollectionVi
         }
     }
     
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if indexPath.row == infoViewModel.count {
             let cell = collectionView.deque(LastCell.self, for: indexPath)
+
             return cell
         } else {
-        let cell = collectionView.deque(OnBoardingCell.self, for: indexPath)
-        cell.configure(with: infoViewModel[indexPath.row])
-        return cell
-    }
+            let cell = collectionView.deque(OnBoardingCell.self, for: indexPath)
+            cell.configure(with: infoViewModel[indexPath.row])
+            return cell
+        }
     }
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
@@ -55,6 +57,7 @@ class OnBoardingDataSource: NSObject, UICollectionViewDataSource, UICollectionVi
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        if infoViewModel.count  == 0 { return 0}
         let count = infoViewModel.count + 1
         
         pageControl.numberOfPages = count

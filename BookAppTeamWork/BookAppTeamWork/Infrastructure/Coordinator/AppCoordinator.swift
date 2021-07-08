@@ -24,23 +24,24 @@ final class AppCoordinator: CoordinatorProtocol {
     }
     
     func start() {
-        let vc = MainViewController.instantiateFromStoryboard()
+        let vc = OnBoardingViewController.instantiateFromStoryboard()
         vc.coordinator = self
         navigationController?.pushViewController(vc, animated: true)
         
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
     }
-}
-//    func signIn() {
-//        let vc = SignInViewController.instantiateFromStoryboard()
-//        vc.coordinator = self
-//        navigationController?.pushViewController(vc, animated: true)
-//    }
-//
-//    func signUp() {
-//            let vc = SignUpViewController.instantiateFromStoryboard()
-//            vc.coordinator = self
-//            navigationController?.pushViewController(vc, animated: true)
-//    }
 
+    func signIn() {
+        let vc = SignInViewController.instantiateFromStoryboard()
+        vc.coordinator = self
+        navigationController?.pushViewController(vc, animated: true)
+    }
+
+    func signUp() {
+            let vc = SignUpViewController.instantiateFromStoryboard()
+            vc.coordinator = self
+            navigationController?.pushViewController(vc, animated: true)
+    }
+
+}

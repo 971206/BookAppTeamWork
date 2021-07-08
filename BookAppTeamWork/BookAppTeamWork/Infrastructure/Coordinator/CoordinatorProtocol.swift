@@ -14,7 +14,7 @@ protocol CoordinatorProtocol: AnyObject {
     init(_ window: UIWindow?, navigationController: UINavigationController?)
     
     func start()
-//    func signIn()
-//    func signUp()
+    func signIn()
+    func signUp()
   
 }

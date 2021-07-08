@@ -13,6 +13,8 @@ class LastCell: UICollectionViewCell{
 
     @IBOutlet weak var signUpBtn: UIButton!
     @IBOutlet weak var signInBtn: UIButton!
+    var viewController: BaseViewController?
+
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -26,10 +28,11 @@ class LastCell: UICollectionViewCell{
     }
 
     @IBAction func signIn(_ sender: Any) {
-
+        self.viewController?.coordinator?.signIn()
         print("Sing in")
     }
     @IBAction func signUp(_ sender: Any) {
+        self.viewController?.coordinator?.signUp()
         print("Sing Up")
 
     }
