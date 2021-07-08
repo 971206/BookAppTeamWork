@@ -58,5 +58,10 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>FontsFree-Net-SFProDisplay-Bold.ttf</string>
+		<string>FontsFree-Net-SFProDisplay-Regular</string>
+	</array>
 </dict>
 </plist>

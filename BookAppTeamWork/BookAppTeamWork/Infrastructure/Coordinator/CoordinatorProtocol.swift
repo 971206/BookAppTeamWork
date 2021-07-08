@@ -9,7 +9,7 @@ import UIKit
 
 protocol CoordinatorProtocol: AnyObject {
     
-    var countryManager: CountryManagerProtocol { get }
+    var newsManager: NewsManagerProtocol { get }
     
     init(_ window: UIWindow?, navigationController: UINavigationController?)
     

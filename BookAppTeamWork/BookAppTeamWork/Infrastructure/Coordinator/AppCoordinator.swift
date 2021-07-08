@@ -15,16 +15,21 @@ final class AppCoordinator: CoordinatorProtocol {
     
     // MARK: - Internal properties
     
-    var countryManager: CountryManagerProtocol
+    var newsManager: NewsManagerProtocol
     
     init(_ window: UIWindow?, navigationController: UINavigationController?) {
         self.window = window
         self.navigationController = navigationController
-        self.countryManager = CountryManager()
+        self.newsManager = NewsManager()
     }
     
     func start() {
-
+        let vc = MainViewController.instantiateFromStoryboard()
+        vc.coordinator = self
+        navigationController?.pushViewController(vc, animated: true)
+        
+        window?.rootViewController = navigationController
+        window?.makeKeyAndVisible()
     }
     
 }
