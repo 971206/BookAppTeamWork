@@ -10,9 +10,7 @@ import UIKit
 class ListDataSource: NSObject, UITableViewDataSource {
     
     private var tableView: UITableView!
-
     private var newsManager: NewsManagerProtocol!
-   // private var coordinator: CoordinatorProtocol!
 
     private var newsList = [News]()
     
@@ -60,7 +58,7 @@ class ListDataSource: NSObject, UITableViewDataSource {
     
 extension ListDataSource: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("tap to open map")
+        print(" cell selected ")
     }
 }
 
