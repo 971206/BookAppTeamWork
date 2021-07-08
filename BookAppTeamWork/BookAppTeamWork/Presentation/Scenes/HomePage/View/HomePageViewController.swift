@@ -18,6 +18,7 @@ class HomePageViewController: BaseViewController {
         super.viewDidLoad()
         configureDataSource()
         configireTableView()
+        self.navigationController?.isNavigationBarHidden = true
     }
     
     private func configureDataSource() {
@@ -32,6 +33,7 @@ class HomePageViewController: BaseViewController {
         tableView.separatorStyle = .none
         tableView.registerNib(class: BestSellerCell.self)
         tableView.registerNib(class: GenresCell.self)
+        tableView.registerNib(class: TopPicksCell.self)
     }
     
 }

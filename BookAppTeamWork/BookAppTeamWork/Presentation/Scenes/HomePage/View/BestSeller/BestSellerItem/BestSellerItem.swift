@@ -14,7 +14,7 @@ class BestSellerItem: UICollectionViewCell {
     @IBOutlet weak var labelTitle: UILabel!
     @IBOutlet weak var labelSmallDescription: UILabel!
     @IBOutlet weak var imageStars: UIImageView!
-    private let cornerRadius = CGFloat(8)
+    private let cornerRadius = CGFloat(10)
 
     
     override func awakeFromNib() {
@@ -25,7 +25,7 @@ class BestSellerItem: UICollectionViewCell {
     func configureImage() {
         shadowLayer.clipsToBounds = true
         shadowLayer.layer.cornerRadius = cornerRadius
-        shadowLayer.alpha = 0.2
+        shadowLayer.alpha = 0.3
         imagePoster.layer.cornerRadius = cornerRadius
     }
     
