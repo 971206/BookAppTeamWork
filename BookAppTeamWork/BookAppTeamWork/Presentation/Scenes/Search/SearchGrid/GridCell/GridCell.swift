@@ -15,7 +15,9 @@ class GridCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        cellView.layer.cornerRadius = 17
+        cellView.layer.cornerRadius = 10
+        newsImg.layer.cornerRadius = 4
+        
     }
 
     func configureGrid(with item: News) {

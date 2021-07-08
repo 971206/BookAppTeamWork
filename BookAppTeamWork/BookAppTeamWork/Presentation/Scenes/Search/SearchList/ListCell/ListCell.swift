@@ -25,8 +25,8 @@ class ListCell: UITableViewCell {
     @IBOutlet weak var whiteB: UIButton!
     override func awakeFromNib() {
         super.awakeFromNib()
-        greenB.layer.cornerRadius = 15
-        whiteB.layer.cornerRadius = 15
+        greenB.layer.cornerRadius = 10
+        whiteB.layer.cornerRadius = 10
         img.layer.cornerRadius = 10
 
         
