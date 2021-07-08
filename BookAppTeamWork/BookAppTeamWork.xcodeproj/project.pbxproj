@@ -94,9 +94,9 @@
 		63320D352696FFC200B83283 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				63320D362696FFC200B83283 /* ViewModel */,
 				63320D3A2696FFC200B83283 /* SearchGrid */,
 				63320D442697005D00B83283 /* SearchList */,
-				63320D362696FFC200B83283 /* ViewModel */,
 			);
 			path = Search;
 			sourceTree = "<group>";

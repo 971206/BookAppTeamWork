@@ -11,14 +11,26 @@ import  Kingfisher
 
 class ListCell: UITableViewCell {
 
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
     @IBOutlet weak var img: UIImageView!
     
     @IBOutlet weak var title: UILabel!
+    
+    @IBOutlet weak var desc: UILabel!
+    
+    @IBOutlet weak var content: UILabel!
+    
+    
+    @IBOutlet weak var greenB: UIButton!
+    
+    @IBOutlet weak var whiteB: UIButton!
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        greenB.layer.cornerRadius = 15
+        whiteB.layer.cornerRadius = 15
+
+        
+    }
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
@@ -29,5 +41,7 @@ class ListCell: UITableViewCell {
         let url = URL(string: item.imageUrl ?? "")
         img.kf.setImage(with: url)
         title.text = item.title
+        desc.text = item.title
+        content.text = item.content
     }
 }
