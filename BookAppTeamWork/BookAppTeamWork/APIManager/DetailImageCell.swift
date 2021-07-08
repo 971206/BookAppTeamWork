@@ -17,11 +17,9 @@ class DetailImageCell: UICollectionViewCell {
         // Initialization code
     }
 
-    func configure(with item: FeedModel) {
+    func configure(with item: News) {
         DetailImage.kf.setImage(with: URL(string: item.imageUrl ?? ""))
-        labelTime.text = item.time
-        labelDescription.text = item.title
-        labelAuthor.text = item.author
+       
     }
 }
 
