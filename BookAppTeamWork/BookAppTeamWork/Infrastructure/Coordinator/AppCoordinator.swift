@@ -24,7 +24,7 @@ final class AppCoordinator: CoordinatorProtocol {
     }
     
     func start() {
-        let vc = SearchViewController.instantiateFromStoryboard()
+        let vc = MainViewController.instantiateFromStoryboard()
         vc.coordinator = self
         navigationController?.pushViewController(vc, animated: true)
         navigationController?.isNavigationBarHidden = true
@@ -33,11 +33,5 @@ final class AppCoordinator: CoordinatorProtocol {
         window?.makeKeyAndVisible()
     }
     
-    func proceedToListVC() {
-        let sb = UIStoryboard(name: "SearchListViewController", bundle: nil)
-        let vc = sb.instantiateViewController(withIdentifier: "SearchListViewController") as! SearchListViewController
-        navigationController?.pushViewController(vc, animated: true)
-        
-    }
    
 }
