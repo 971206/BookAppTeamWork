@@ -6,20 +6,35 @@
 //
 
 import UIKit
-protocol SlideMenuDelegate {
-    func slideMenuItemSelectedAtIndex(_ index : Int32)
-}
 class MenuViewController: UIViewController {
     
     
     var btnMenu : UIButton!
-    var delegate : SlideMenuDelegate?
+    
 
+    @IBOutlet var theView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        theView.roundCorners(corners: [.bottomLeft], radius: 500)
 
         
     }
+    
+    @IBAction func closeSlideTapped(_ sender: Any) {
+        UIView.animate(withDuration: 0.3, animations: { () -> Void in
+            self.view.frame = CGRect(x: +UIScreen.main.bounds.size.width, y: 0, width: UIScreen.main.bounds.size.width,height: UIScreen.main.bounds.size.height)
+            self.view.layoutIfNeeded()
+            self.view.backgroundColor = UIColor.clear
+            }, completion: { (finished) -> Void in
+                self.view.removeFromSuperview()
+                self.removeFromParent()
+        })
+    }
+    
+    
+    
     
     @IBAction func menuBtnTapped(_ sender: UIButton) {
         sender.isSelected = !sender.isSelected
@@ -35,4 +50,13 @@ class MenuViewController: UIViewController {
     
    
 
+}
+
+extension UIView {
+   func roundCorners(corners: UIRectCorner, radius: CGFloat) {
+        let path = UIBezierPath(roundedRect: bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
+        let mask = CAShapeLayer()
+        mask.path = path.cgPath
+        layer.mask = mask
+    }
 }

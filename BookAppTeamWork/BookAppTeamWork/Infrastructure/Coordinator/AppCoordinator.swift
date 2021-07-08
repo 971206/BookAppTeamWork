@@ -25,7 +25,8 @@ final class AppCoordinator: CoordinatorProtocol {
     
     func start() {
         //let vc = MainViewController.instantiateFromStoryboard()
-        let vc = SlideMenuViewController.instantiateFromStoryboard()
+        //let vc = SlideMenuViewController.instantiateFromStoryboard()
+        let vc = HomePageViewController.instantiateFromStoryboard()
         vc.coordinator = self
         navigationController?.pushViewController(vc, animated: true)
         

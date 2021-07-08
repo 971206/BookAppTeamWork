@@ -16,9 +16,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="fe1-5J-kGc"/>
+                    <navigationItem key="navigationItem" id="fe1-5J-kGc">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="9Xq-5h-TWZ">
+                            <connections>
+                                <action selector="onMenuTapped:" destination="Y6W-OH-hqX" id="XLB-aw-3bF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -34,12 +40,16 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iud-xp-1WM">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="closeSlideTapped:" destination="zrM-F9-Ru8" eventType="touchUpInside" id="k0j-MZ-9ki"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c54-e7-01e">
                                 <rect key="frame" x="81" y="0.0" width="333" height="896"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="Wz4-Gb-UYy">
-                                        <rect key="frame" x="0.0" y="86" width="333" height="605"/>
+                                        <rect key="frame" x="0.0" y="120" width="333" height="605"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fls-UK-Gvg">
                                                 <rect key="frame" x="0.0" y="0.0" width="333" height="45"/>
@@ -141,13 +151,13 @@
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="Wz4-Gb-UYy" secondAttribute="trailing" id="ktk-0D-IyE"/>
-                                    <constraint firstItem="Wz4-Gb-UYy" firstAttribute="top" secondItem="c54-e7-01e" secondAttribute="top" constant="86" id="rAH-dw-rpy"/>
+                                    <constraint firstItem="Wz4-Gb-UYy" firstAttribute="top" secondItem="c54-e7-01e" secondAttribute="top" constant="120" id="rAH-dw-rpy"/>
                                     <constraint firstItem="Wz4-Gb-UYy" firstAttribute="leading" secondItem="c54-e7-01e" secondAttribute="leading" id="uiv-On-uTS"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="QRb-wg-uWJ"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="c54-e7-01e" firstAttribute="leading" secondItem="QRb-wg-uWJ" secondAttribute="leading" constant="81" id="0Tc-4u-o6b"/>
                             <constraint firstAttribute="bottom" secondItem="Iud-xp-1WM" secondAttribute="bottom" id="3Tz-Ud-Ems"/>
@@ -159,10 +169,13 @@
                             <constraint firstItem="c54-e7-01e" firstAttribute="top" secondItem="RB5-Uf-DBP" secondAttribute="top" id="uYY-sd-CVT"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="theView" destination="c54-e7-01e" id="1Lf-SS-We7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7vB-gg-huK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1071.0144927536232" y="-549.10714285714278"/>
+            <point key="canvasLocation" x="1842" y="119"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="RZV-Cg-adv">
@@ -180,18 +193,18 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vFc-ph-Q8m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="130.58035714285714"/>
+            <point key="canvasLocation" x="299" y="119"/>
         </scene>
     </scenes>
     <resources>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
