@@ -14,10 +14,18 @@ class BestSellerItem: UICollectionViewCell {
     @IBOutlet weak var labelTitle: UILabel!
     @IBOutlet weak var labelSmallDescription: UILabel!
     @IBOutlet weak var imageStars: UIImageView!
+    private let cornerRadius = CGFloat(8)
+
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        configureImage()
+    }
+    
+    func configureImage() {
+        shadowLayer.clipsToBounds = true
+        shadowLayer.layer.cornerRadius = cornerRadius
+        imagePoster.layer.cornerRadius = cornerRadius
     }
     
     func configure(with item: News) {
@@ -26,5 +34,4 @@ class BestSellerItem: UICollectionViewCell {
         self.labelTitle.text = item.title
         self.labelSmallDescription.text = item.content
     }
-
 }

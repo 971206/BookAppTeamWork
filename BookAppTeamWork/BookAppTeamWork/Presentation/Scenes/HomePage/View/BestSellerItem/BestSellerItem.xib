@@ -33,7 +33,7 @@
                                     <constraint firstAttribute="height" constant="200" id="cyv-UL-aSz"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ygn-og-0W7">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_stars" translatesAutoresizingMaskIntoConstraints="NO" id="Ygn-og-0W7">
                                 <rect key="frame" x="0.0" y="265.5" width="70" height="9.5"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="9.5" id="30z-hs-kSx"/>
@@ -90,6 +90,7 @@
         </collectionViewCell>
     </objects>
     <resources>
+        <image name="ic_stars" width="70" height="9.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
