@@ -12,11 +12,13 @@ class SearchViewController: BaseViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     private var dataSource: GridDataSource!
     private var newsManager: NewsManagerProtocol!
-
+    @IBOutlet weak var profileBtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupLayout()
         configureNews()
+        profileBtn.layer.cornerRadius = 20
     }
     
     private func setupLayout() {
@@ -30,13 +32,6 @@ class SearchViewController: BaseViewController {
         
     }
     
-    @IBAction func onList(_ sender: Any) {
-        
-        let sb = UIStoryboard(name: "SearchListViewController", bundle: nil)
-        let vc = sb.instantiateViewController(withIdentifier: "SearchListViewController") as! SearchListViewController
-        navigationController?.pushViewController(vc, animated: true)
-
-    }
    
     
 

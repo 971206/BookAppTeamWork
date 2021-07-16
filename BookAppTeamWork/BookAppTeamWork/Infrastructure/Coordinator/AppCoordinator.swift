@@ -24,7 +24,7 @@ final class AppCoordinator: CoordinatorProtocol {
     }
     
     func start() {
-        let vc = SearchViewController.instantiateFromStoryboard()
+        let vc = TabBarViewController.instantiateFromStoryboard()
         vc.coordinator = self
         navigationController?.pushViewController(vc, animated: true)
         navigationController?.isNavigationBarHidden = true
@@ -34,4 +34,8 @@ final class AppCoordinator: CoordinatorProtocol {
     }
     
    
+    func popViewController() {
+        navigationController?.popViewController(animated: true)
+    }
+    
 }

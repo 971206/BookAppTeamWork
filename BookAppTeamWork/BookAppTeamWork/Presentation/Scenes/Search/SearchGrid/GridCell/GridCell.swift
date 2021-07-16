@@ -9,13 +9,13 @@ import UIKit
 
 class GridCell: UICollectionViewCell {
 
-    @IBOutlet weak var cellView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var newsImg: UIImageView!
     
+    @IBOutlet weak var contentLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
-        cellView.layer.cornerRadius = 10
+       
         newsImg.layer.cornerRadius = 4
         
     }
@@ -24,5 +24,6 @@ class GridCell: UICollectionViewCell {
         let url = URL(string: item.imageUrl ?? "")
         newsImg.kf.setImage(with: url)
         titleLabel.text = item.title
+        contentLabel.text = item.content
     }
 }

@@ -1,13 +1,13 @@
 //
-//  GridDataSource.swift
+//  SearchDataSource.swift
 //  BookAppTeamWork
 //
-//  Created by Mac User on 7/16/21.
+//  Created by Mac User on 7/8/21.
 //
 
 import UIKit
 
-class GridDataSource: NSObject, UICollectionViewDataSource {
+class MyFeedDataSource: NSObject, UICollectionViewDataSource {
     
     private var collectionView: UICollectionView!
 
@@ -42,8 +42,8 @@ class GridDataSource: NSObject, UICollectionViewDataSource {
     
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.deque(GridCell.self, for: indexPath)
-        cell.configureGrid(with: newsList[indexPath.row])
+        let cell = collectionView.deque(FeedCell.self, for: indexPath)
+        cell.configure(with: newsList[indexPath.row])
         return cell
     }
     
@@ -51,9 +51,9 @@ class GridDataSource: NSObject, UICollectionViewDataSource {
     
 }
 
-extension GridDataSource: UICollectionViewDelegateFlowLayout {
+extension MyFeedDataSource: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.width / 1, height: collectionView.frame.height)
+        return CGSize(width: collectionView.frame.width / 3, height: collectionView.frame.height)
     }
 
     func numberOfSections(in collectionView: UICollectionView) -> Int {

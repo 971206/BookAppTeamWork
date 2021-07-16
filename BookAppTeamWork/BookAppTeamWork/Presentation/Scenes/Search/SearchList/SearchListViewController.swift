@@ -14,10 +14,13 @@ class SearchListViewController: BaseViewController {
     private var dataSource: ListDataSource!
     private var newsManager: NewsManagerProtocol!
 
+    @IBOutlet weak var latestBtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupLayout()
         configureNews()
+        latestBtn.layer.cornerRadius = 21
     }
     
     private func setupLayout() {

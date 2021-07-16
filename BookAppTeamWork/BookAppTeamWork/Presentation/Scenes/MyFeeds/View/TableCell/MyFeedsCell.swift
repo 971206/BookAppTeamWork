@@ -1,15 +1,13 @@
 //
-//  ListCell.swift
+//  MyFeedsCell.swift
 //  BookAppTeamWork
 //
-//  Created by macuser on 08.07.21.
+//  Created by Mac User on 7/16/21.
 //
 
-
 import UIKit
-import  Kingfisher
 
-class ListCell: UITableViewCell {
+class MyFeedsCell: UITableViewCell {
 
     @IBOutlet weak var img: UIImageView!
     
@@ -17,16 +15,18 @@ class ListCell: UITableViewCell {
     
     @IBOutlet weak var smallImg: UIImageView!
     
+    @IBOutlet weak var dateLabel: UILabel!
     
+    @IBOutlet weak var nameLabel: UILabel!
     
    
     override func awakeFromNib() {
         super.awakeFromNib()
       
-        smallImg.layer.cornerRadius = 30
-        smallImg.layer.borderWidth = 2
-        smallImg.layer.borderColor = UIColor.white.cgColor
-        img.layer.cornerRadius = 10
+        smallImg.layer.cornerRadius = 16
+//        smallImg.layer.borderWidth = 2
+//        smallImg.layer.borderColor = UIColor.white.cgColor
+        img.layer.cornerRadius = 41
 
         
     }
@@ -41,6 +41,9 @@ class ListCell: UITableViewCell {
         img.kf.setImage(with: url)
         smallImg.kf.setImage(with: url)
         title.text = item.title
+        nameLabel.text = item.title
+        dateLabel.text = item.date
         
     }
+    
 }

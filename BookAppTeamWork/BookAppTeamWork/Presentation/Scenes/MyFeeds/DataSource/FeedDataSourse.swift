@@ -1,13 +1,13 @@
 //
-//  ListDataSource.swift
+//  FeedDataSourse.swift
 //  BookAppTeamWork
 //
-//  Created by Mac User on 7/8/21.
+//  Created by Mac User on 7/16/21.
 //
 
 import UIKit
 
-class ListDataSource: NSObject, UITableViewDataSource {
+class FeedDataSourse: NSObject, UITableViewDataSource {
     
     private var tableView: UITableView!
     private var newsManager: NewsManagerProtocol!
@@ -39,7 +39,7 @@ class ListDataSource: NSObject, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.deque(ListCell.self, for: indexPath)
+        let cell = tableView.deque(MyFeedsCell.self, for: indexPath)
         cell.configure(with: newsList[indexPath.row])
         return cell
     }
@@ -56,7 +56,7 @@ class ListDataSource: NSObject, UITableViewDataSource {
     
 }
     
-extension ListDataSource: UITableViewDelegate {
+extension FeedDataSourse: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(" cell selected ")
     }
